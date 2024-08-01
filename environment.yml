@@ -1,0 +1,9 @@
+# This file lists the dependencies needed to build and test all of article_2024_mahe_IL_pitfalls.
+# Create a conda environment with these dependencies preinstalled with:
+# conda env create -f environment.yml
+name: article_2024_mahe_IL_pitfalls
+channels:
+  - conda-forge
+dependencies:
+  - unitpackage>=0.8.4,<0.9.0
+

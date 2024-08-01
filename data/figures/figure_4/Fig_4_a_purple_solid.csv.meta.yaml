@@ -1,0 +1,99 @@
+# This file is part of echemdb (https://github.com/echemdb/website)
+# Details on the meta data structure can be found on https://github.com/echemdb/metadata-schema
+experimental:
+  instrumentation:
+  - manufacturer: Zahner Elektrik
+    name: Zahner IM6
+    type: potentiostat
+type: raw
+measurement type: CV
+comment: Type I
+figure description:
+  fields:
+    - name: E
+      unit: V
+      reference: RHE
+    - name: I
+      unit: A
+    - name: j
+      unit: uA / cm2
+      comment: Inferred from I
+    - name: t
+      unit: s
+  scan rate:
+    value: 5
+    unit: mV / s
+system:
+  type: electrochemical
+  electrodes:
+    - name: CE
+      function: counter electrode
+      crystallographic orientation: poly
+      material: Pt
+      source:
+        manufacturer: MaTecK GmbH
+      shape:
+        type: wire
+      purity:
+        value: 99.99
+        unit: pct
+    - name: REF
+      function: reference electrode
+      redox system: Zn/Zn[TFSI]2
+      source:
+        manufacturer: Home made
+        url: https://onlinelibrary.wiley.com/doi/full/10.1002/ange.202105871
+    - name: WE
+      function: working electrode
+      crystallographic orientation: '111'
+      material: Au
+      preparation procedure:
+        description:
+          - Annealed for 2h at 960°C in air in a muffle furnace
+      shape:
+        diameter:
+          unit: mm
+          value: 12
+        type: disk
+      source:
+        manufacturer: MaTecK GmbH
+  electrolyte:
+    components:
+    - name: MPPi-TFSI
+      proportion:
+        unit: volume percent
+        value: 100
+      source:
+        supplier: IoLiTec ###### !!!! adapt !!!! ######
+        purity:
+            grade: '>99%'
+      purity:
+        refinement: ###### !!!! adapt !!!! ###### sonst ganz weg mit purity
+          - addition of UHP water
+          - measurement 2 days after water addition
+      type: solvent
+      purchased: 2021-05-21
+    - name: water
+      proportion:
+        unit: ppm
+        value: 450 ###### !!!! adapt !!!! ######
+      type: impurity
+    temperature:
+      unit: K
+      value: 298.15
+    type: ionic liquid
+source:
+  citation key: heubach_2024_assessing_1
+  url: https://chemrxiv.org/engage/chemrxiv/article-details/66350737418a5379b05d7158
+  figure: 4a ###### !!!! adapt !!!! ######
+  curve: purple solid ###### !!!! adapt !!!! ######
+  cycle: 1
+  techniques:
+    - CV
+    - XPS
+curation:
+  process:
+  - role: experimentalist
+    name: Maren-Kathrin Heubach
+    orcid: https://orcid.org/0000-0002-3769-7169
+    date: 2022-01-10
