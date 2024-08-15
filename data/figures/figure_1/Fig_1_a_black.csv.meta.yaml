@@ -12,7 +12,7 @@ figure description:
   fields:
     - name: E
       unit: V
-      reference: RHE
+      reference: Zn/Zn[TFSI]2
     - name: I
       unit: A
     - name: j
