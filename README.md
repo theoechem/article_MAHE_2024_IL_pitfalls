@@ -11,6 +11,8 @@ Data:
 * [`./data/figures`](./data/figures) contains CSV of the curves shown in the individual figures found in the main manuscript as well as the SI.
 * [`data/xps_raw`](data/xps_raw) contains CSV of all measured XP spectra.
 
+[Read more](./data/README.md).
+
 Additional material:
 
 * [`./doc/SI_database_interaction.ipynb`](./doc/SI_database_interaction.ipynb) illustrates the usage of external databases to compare cyclic voltammograms from different sources.
