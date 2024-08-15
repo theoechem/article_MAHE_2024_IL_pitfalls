@@ -23,7 +23,7 @@
                         "name": "E",
                         "type": "number",
                         "unit": "V",
-                        "reference": "RHE"
+                        "reference": "Zn/Zn[TFSI]2"
                     },
                     {
                         "name": "I",
@@ -57,7 +57,7 @@
                             {
                                 "name": "E",
                                 "unit": "V",
-                                "reference": "RHE"
+                                "reference": "Zn/Zn[TFSI]2"
                             },
                             {
                                 "name": "I",
