@@ -1,6 +1,6 @@
 [![DOI](https://zenodo.org/badge/836711448.svg)](https://zenodo.org/doi/10.5281/zenodo.13166647)
 
-# Supporting information to article 2024_MAHE_IL_pitfalls
+# Supporting information to article MAHE_2024_IL_pitfalls
 
 This repository contains all data and supporting material for the article
 "Reproducibility of electrochemical measurements with ionic liquids: Is the water content the decisive parameter?" by
@@ -21,13 +21,13 @@ Additional material:
 This project can be downloaded directly from the repository website or via
 
 ```sh .noeval
-pip clone REPO NAME
+git clone git@github.com:theoechem/article_MAHE_2024_IL_pitfalls.git
 ```
 
-To explore the Jupyter notebooks in `doc` interactively, install the required dependencies with conda (or mamba)
+To explore the Jupyter notebooks in `doc` interactively, install the required dependencies with conda (or mamba).
 
 ```sh .noeval
-cd REPO NAME
+cd article_MAHE_2024_IL_pitfalls
 conda env create -f environment.yml
-conda activate REPO NAME
+conda activate article_MAHE_2024_IL_pitfalls
 ```
