@@ -1,0 +1,190 @@
+{
+    "resources": [
+        {
+            "name": "fig_s1_d_black_dotted",
+            "type": "table",
+            "path": "fig_s1_d_black_dotted.csv",
+            "scheme": "file",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "Number",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "t",
+                        "type": "number",
+                        "unit": "s"
+                    },
+                    {
+                        "name": "E",
+                        "type": "number",
+                        "unit": "V",
+                        "reference": "RHE"
+                    },
+                    {
+                        "name": "I",
+                        "type": "number",
+                        "unit": "A"
+                    },
+                    {
+                        "name": "j",
+                        "type": "number",
+                        "unit": "uA / cm2",
+                        "comment": "Inferred from I"
+                    }
+                ]
+            },
+            "metadata": {
+                "echemdb": {
+                    "experimental": {
+                        "instrumentation": [
+                            {
+                                "manufacturer": "Zahner Elektrik",
+                                "name": "Zahner IM6",
+                                "type": "potentiostat"
+                            }
+                        ]
+                    },
+                    "type": "raw",
+                    "measurement type": "CV",
+                    "comment": "Type II",
+                    "figure description": {
+                        "fields": [
+                            {
+                                "name": "E",
+                                "unit": "V",
+                                "reference": "RHE"
+                            },
+                            {
+                                "name": "I",
+                                "unit": "A"
+                            },
+                            {
+                                "name": "j",
+                                "unit": "uA / cm2",
+                                "comment": "Inferred from I"
+                            },
+                            {
+                                "name": "t",
+                                "unit": "s"
+                            }
+                        ],
+                        "scan rate": {
+                            "value": 5,
+                            "unit": "mV / s"
+                        }
+                    },
+                    "system": {
+                        "type": "electrochemical",
+                        "electrodes": [
+                            {
+                                "name": "CE",
+                                "function": "counter electrode",
+                                "crystallographic orientation": "poly",
+                                "material": "Pt",
+                                "source": {
+                                    "manufacturer": "MaTecK GmbH"
+                                },
+                                "shape": {
+                                    "type": "wire"
+                                },
+                                "purity": {
+                                    "value": 99.99,
+                                    "unit": "pct"
+                                }
+                            },
+                            {
+                                "name": "REF",
+                                "function": "reference electrode",
+                                "redox system": "Zn/Zn[TFSI]2",
+                                "source": {
+                                    "manufacturer": "Home made",
+                                    "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/ange.202105871"
+                                }
+                            },
+                            {
+                                "name": "WE",
+                                "function": "working electrode",
+                                "crystallographic orientation": "111",
+                                "material": "Au",
+                                "preparation procedure": {
+                                    "description": [
+                                        "Annealed for 2h at 960°C in air in a muffle furnace"
+                                    ]
+                                },
+                                "shape": {
+                                    "diameter": {
+                                        "unit": "mm",
+                                        "value": 12
+                                    },
+                                    "type": "disk"
+                                },
+                                "source": {
+                                    "manufacturer": "MaTecK GmbH"
+                                }
+                            }
+                        ],
+                        "electrolyte": {
+                            "components": [
+                                {
+                                    "name": "MPPi-TFSI",
+                                    "proportion": {
+                                        "unit": "volume percent",
+                                        "value": 100
+                                    },
+                                    "source": {
+                                        "supplier": "Solvionic",
+                                        "purity": {
+                                            "grade": ">99%"
+                                        }
+                                    },
+                                    "type": "solvent",
+                                    "purchased": "2021-06-01"
+                                },
+                                {
+                                    "name": "water",
+                                    "proportion": {
+                                        "unit": "ppm",
+                                        "value": 10,
+                                        "description": "lower equal"
+                                    },
+                                    "type": "impurity"
+                                }
+                            ],
+                            "temperature": {
+                                "unit": "K",
+                                "value": 298.15
+                            },
+                            "type": "ionic liquid"
+                        }
+                    },
+                    "source": {
+                        "citation key": "heubach_2024_assessing_1",
+                        "url": "https://chemrxiv.org/engage/chemrxiv/article-details/66350737418a5379b05d7158",
+                        "figure": "S1d",
+                        "curve": "black_dotted",
+                        "cycle": 5,
+                        "techniques": [
+                            "CV",
+                            "XPS"
+                        ]
+                    },
+                    "curation": {
+                        "process": [
+                            {
+                                "role": "experimentalist",
+                                "name": "Maren-Kathrin Heubach",
+                                "orcid": "https://orcid.org/0000-0002-3769-7169",
+                                "date": "2022-01-10"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}
