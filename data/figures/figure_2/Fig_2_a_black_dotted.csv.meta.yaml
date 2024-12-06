@@ -64,7 +64,7 @@ system:
         unit: volume percent
         value: 100
       source:
-        supplier: IoLiTec ###### !!!! adapt !!!! ######
+        supplier: IoLiTec
         purity:
             grade: '>99%'
       type: solvent
@@ -72,7 +72,7 @@ system:
     - name: water
       proportion:
         unit: ppm
-        value: 75 ###### !!!! adapt !!!! ######
+        value: 75
         description: lower equal
       type: impurity
     temperature:
@@ -82,8 +82,8 @@ system:
 source:
   citation key: heubach_2024_assessing_1
   url: https://chemrxiv.org/engage/chemrxiv/article-details/66350737418a5379b05d7158
-  figure: 2a ###### !!!! adapt !!!! ######
-  curve: black dotted ###### !!!! adapt !!!! ######
+  figure: 2a
+  curve: black dotted
   cycle: 1
   techniques:
     - CV

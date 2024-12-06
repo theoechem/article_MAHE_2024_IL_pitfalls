@@ -64,11 +64,11 @@ system:
         unit: volume percent
         value: 100
       source:
-        supplier: IoLiTec ###### !!!! adapt !!!! ######
+        supplier: IoLiTec
         purity:
             grade: '>99%'
       purity:
-        refinement: ###### !!!! adapt !!!! ###### sonst ganz weg mit purity
+        refinement: sonst ganz weg mit purity
           - addition of UHP water
           - measurement 2 days after water addition
       type: solvent
@@ -76,7 +76,7 @@ system:
     - name: water
       proportion:
         unit: ppm
-        value: 450 ###### !!!! adapt !!!! ######
+        value: 450
       type: impurity
     temperature:
       unit: K
@@ -85,8 +85,8 @@ system:
 source:
   citation key: heubach_2024_assessing_1
   url: https://chemrxiv.org/engage/chemrxiv/article-details/66350737418a5379b05d7158
-  figure: 4a ###### !!!! adapt !!!! ######
-  curve: purple solid ###### !!!! adapt !!!! ######
+  figure: 4a
+  curve: purple solid
   cycle: 1
   techniques:
     - CV

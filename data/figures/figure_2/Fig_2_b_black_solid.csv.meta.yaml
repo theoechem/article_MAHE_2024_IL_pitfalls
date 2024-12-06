@@ -64,11 +64,11 @@ system:
         unit: volume percent
         value: 100
       source:
-        supplier: IoLiTec ###### !!!! adapt !!!! ######
+        supplier: IoLiTec
         purity:
             grade: '>99%'
       purity:
-        refinement: ###### !!!! adapt !!!! ###### sonst ganz weg mit purity
+        refinement: sonst ganz weg mit purity
           - Addition of 4A molecular sieve
           - Vacuum dried at 80°C for 12 h.
       type: solvent
@@ -76,7 +76,7 @@ system:
     - name: water
       proportion:
         unit: ppm
-        value: 5 ###### !!!! adapt !!!! ######
+        value: 5
         description: lower equal
       type: impurity
     temperature:
@@ -86,8 +86,8 @@ system:
 source:
   citation key: heubach_2024_assessing_1
   url: https://chemrxiv.org/engage/chemrxiv/article-details/66350737418a5379b05d7158
-  figure: 2b ###### !!!! adapt !!!! ######
-  curve: black solid ###### !!!! adapt !!!! ######
+  figure: 2b
+  curve: black solid
   cycle: 1
   techniques:
     - CV

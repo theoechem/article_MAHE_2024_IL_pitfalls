@@ -7,7 +7,7 @@ experimental:
     type: potentiostat
 type: raw
 measurement type: CV
-comment: Type II ###### !!!! adapt !!!! ###### Type I or II
+comment: Type II Type I or II
 figure description:
   fields:
     - name: E
@@ -64,7 +64,7 @@ system:
         unit: volume percent
         value: 100
       source:
-        supplier: Solvionic ###### !!!! adapt !!!! ######
+        supplier: Solvionic
         purity:
             grade: '>99%'
       type: solvent
@@ -72,7 +72,7 @@ system:
     - name: water
       proportion:
         unit: ppm
-        value: 10 ###### !!!! adapt !!!! ######
+        value: 10
         description: lower equal
       type: impurity
     temperature:
@@ -82,9 +82,9 @@ system:
 source:
   citation key: heubach_2024_assessing_1
   url: https://chemrxiv.org/engage/chemrxiv/article-details/66350737418a5379b05d7158
-  figure: S1d ###### !!!! adapt !!!! ######
-  curve: black_dotted ###### !!!! adapt !!!! ######
-  cycle: 5 ###### !!!! adapt !!!! ######
+  figure: S1d
+  curve: black_dotted
+  cycle: 5
   techniques:
     - CV
     - XPS
