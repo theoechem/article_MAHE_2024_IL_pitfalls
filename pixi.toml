@@ -1,0 +1,42 @@
+[workspace]
+authors = ["Albert Engstfeld <albert.engstfeld@gmail.com>"]
+channels = ["conda-forge"]
+name = "article_MAHE_2024_IL_pitfalls"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[environments]
+python-310 = ["python-310"]
+python-311 = ["python-311"]
+python-312 = ["python-312"]
+python-313 = ["python-313"]
+python-314 = ["python-314"]
+dev = ["dev"]
+
+[dependencies]
+unitpackage = ">=0.11.1,<0.12.0"
+python = "*"
+pixi-kernel = ">=0.6.1,<0.7"
+ipykernel = ">=6.29.5,<7"
+pip = ">=25.0,<26"
+jupyterlab = ">=4.3.4,<5"
+
+[feature.python-310.dependencies]
+python = "3.10.*"
+
+[feature.python-311.dependencies]
+python = "3.11.*"
+
+[feature.python-312.dependencies]
+python = "3.12.*"
+
+[feature.python-313.dependencies]
+python = "3.13.*"
+
+[feature.python-314.dependencies]
+python = "3.14.*"
+
+[feature.dev.dependencies]
+pip = "*"
+conda = "*"
+jupyterlab = "*"

@@ -26,10 +26,19 @@ This project can be downloaded directly from the repository website or via
 git clone git@github.com:theoechem/article_MAHE_2024_IL_pitfalls.git
 ```
 
-To explore the Jupyter notebooks in `doc` interactively, install the required dependencies with conda (or mamba).
+Install [pixi](https://pixi.prefix.dev/dev/installation/) and install the dependencies via pixi.
 
 ```sh .noeval
-cd article_MAHE_2024_IL_pitfalls
-conda env create -f environment.yml
-conda activate article_MAHE_2024_IL_pitfalls
+pixi install
 ```
+
+To explore the Jupyter notebooks in `doc` interactively use your favorite IDE or start jupyter via:
+
+```sh .noeval
+pixi run jupyter lab
+```
+
+# License
+
+The contents of this repository are licensed under the [GNU General Public
+License v3.0](./LICENSE) or, at your option, any later version.
