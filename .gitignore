@@ -3,3 +3,8 @@
 !.pixi/config.toml
 .ipynb_checkpoints
 __pycache__/
+
+# generated files
+doc/figures/*.png
+doc/tables/*.tex
+doc/bibliography/*.bib
