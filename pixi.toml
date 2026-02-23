@@ -14,7 +14,7 @@ python-314 = ["python-314"]
 dev = ["dev"]
 
 [dependencies]
-unitpackage = ">=0.11.1,<0.12.0"
+unitpackage = ">=0.12.0,<0.13.0"
 python = "*"
 pixi-kernel = ">=0.6.1,<0.7"
 ipykernel = ">=6.29.5,<7"
